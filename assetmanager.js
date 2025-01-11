@@ -2,8 +2,10 @@ class AssetManager {
     constructor() {
         this.successCount = 0;
         this.errorCount = 0;
+        // is filled up with downloaded sprites
         this.cache = [];
-        this.downloadQueue = [];
+        // fill this up with all sprites to be downloaded -> string rep of download path or website path
+        this.downloadQueue = []; 
     };
 
     queueDownload(path) {
