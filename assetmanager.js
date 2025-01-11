@@ -5,6 +5,7 @@ class AssetManager {
         // is filled up with downloaded sprites
         this.cache = [];
         // fill this up with all sprites to be downloaded -> string rep of download path or website path
+        // can also be used to download sounds
         this.downloadQueue = []; 
     };
 
