@@ -9,6 +9,6 @@ class ChargeWitch {
     };
 
     draw(ctx) {
-        this.animator.drawFrame(this.game.clockTick, ctx, 200, 25);
+        this.animator.drawFrame(this.game.clockTick, ctx, 500, 25);
     };
 }

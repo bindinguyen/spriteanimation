@@ -9,6 +9,6 @@ class AttackWitch {
     };
 
     draw(ctx) {
-        this.animator.drawFrame(this.game.clockTick, ctx, 70, 25);
+        this.animator.drawFrame(this.game.clockTick, ctx, 150, 25);
     };
 }

@@ -4,9 +4,9 @@ class RunWitch {
         this.animator = new Animator (ASSET_MANAGER.getAsset("./sprites/B_witch_run.png"), 0, 0, 32, 48, 8, 0.2);
 
         this.x = 0;
-        this.y = 75;
+        this.y = 200;
         this.width = 1024
-        this.speed = 100; 
+        this.speed = 75; 
     };
 
     update() {
