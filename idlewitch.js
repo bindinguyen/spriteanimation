@@ -1,4 +1,4 @@
-class Witch {
+class IdleWitch {
     // witch frame in 48 h, 32 w
     constructor(game) {
         this.game = game;
