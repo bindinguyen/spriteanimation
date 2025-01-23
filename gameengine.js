@@ -72,8 +72,21 @@ class GameEngine {
             this.rightclick = getXandY(e);
         });
 
-        this.ctx.canvas.addEventListener("keydown", event => this.keys[event.key] = true);
-        this.ctx.canvas.addEventListener("keyup", event => this.keys[event.key] = false);
+        // captures when a key is pressed down
+        this.ctx.canvas.addEventListener("keydown", event => {
+            console.log(event)
+            this.keys[event.key] = true;
+            switch (event.code) {
+                case ("KeyW"): {
+                    // what happens when W is pushed down
+                }
+            }
+        });
+
+        //captures when a key is released
+        this.ctx.canvas.addEventListener("keyup", event => {
+            this.keys[event.key] = false
+        });
     };
 
     addEntity(entity) {
